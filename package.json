@@ -1,9 +1,16 @@
 {
   "name": "nuxt-usesuperflow",
   "version": "0.0.8",
-  "description": "Nuxt module for Usesuperflow",
-  "repository": "vamsii777/usesuperflow",
   "license": "MIT",
+  "description": "Nuxt module for Usesuperflow (https://usesuperflow.com)",
+  "homepage": "https://github.com/vamsii777/nuxt-usesuperflow",
+  "repository": "github:vamsii777/nuxt-usesuperflow",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9",
+    "pnpm": ">=9",
+    "bun": ">=1"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -19,32 +26,37 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
+    "build": "nuxi build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.10.1",
-    "@usesuperflow/client": "^1.0.4",
+    "@nuxt/kit": "^3.15.4",
+    "@usesuperflow/client": "^1.0.5",
     "defu": "^6.1.4",
     "typescript": "latest"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^8.0.1",
-    "@types/node": "^20.11.16",
+    "@release-it/conventional-changelog": "^8.0.2",
+    "@types/node": "^20.17.16",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.5",
-    "@nuxt/schema": "^3.10.1",
-    "prettier": "^3.2.4",
-    "@nuxt/test-utils": "^3.11.0",
-    "changelogen": "^0.5.5",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.10.1",
-    "vitest": "^1.2.2"
+    "@nuxt/schema": "^3.15.4",
+    "prettier": "^3.4.2",
+    "@nuxt/test-utils": "^3.15.4",
+    "changelogen": "^0.5.7",
+    "eslint": "^8.57.1",
+    "nuxt": "^3.15.4",
+    "vitepress": "^1.5.0",
+    "vitest": "^1.6.0"
   }
 }

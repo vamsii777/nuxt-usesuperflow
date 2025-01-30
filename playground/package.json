@@ -1,13 +1,16 @@
 {
   "private": true,
-  "name": "my-module-playground",
-  "type": "module",
+  "name": "nuxt-playground",
   "scripts": {
-    "dev": "nuxi dev",
+    "typecheck": "tsc --noEmit",
+    "dev": "nuxi prepare && nuxi dev",
     "build": "nuxi build",
-    "generate": "nuxi generate"
+    "start": "nuxi preview",
+    "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-    "nuxt": "latest"
+  "devDependencies": {
+    "nuxt": "^3.15.4",
+    "typescript": "^5.5.4",
+    "vue-tsc": "^2.1.10"
   }
 }

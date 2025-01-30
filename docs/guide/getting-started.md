@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   modules: ['nuxt-usesuperflow'],
   usesuperflow: {
     projectId: 'your-project-id', // Required
-    apiKey: 'your-api-key'        // Required
+    apiKey: 'your-api-key' // Required
   }
 })
 ```
@@ -55,17 +55,17 @@ USESUPERFLOW_API_KEY=your-api-key
 After installation, you can use the module in your Nuxt application:
 
 ```vue
-<template>
-  <div>
-    <!-- Your UseSuperflow components here -->
-  </div>
-</template>
-
 <script setup>
 const { superflow } = useSuperflow()
 
 // Your UseSuperflow logic here
 </script>
+
+<template>
+  <div>
+    <!-- Your UseSuperflow components here -->
+  </div>
+</template>
 ```
 
 ## Configuration
@@ -76,4 +76,4 @@ The module can be configured through the `usesuperflow` property in your `nuxt.c
 
 - Check out the [Configuration](/config/introduction) section for detailed setup options
 - View the [API Reference](/api/reference) for technical details
-- Visit our [GitHub repository](https://github.com/vamsii777/nuxt-usesuperflow) for source code and contributions 
+- Visit our [GitHub repository](https://github.com/vamsii777/nuxt-usesuperflow) for source code and contributions

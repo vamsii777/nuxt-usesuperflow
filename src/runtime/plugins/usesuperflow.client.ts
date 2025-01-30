@@ -4,8 +4,9 @@
  */
 
 // Import the necessary dependencies
-import { initSuperflow } from '@usesuperflow/client';
-import { defineNuxtPlugin, useRuntimeConfig } from '#imports';
+import { initSuperflow } from '@usesuperflow/client'
+import { defineNuxtPlugin, useRuntimeConfig } from '#imports'
+import type { ModuleOptions } from '../../module'
 
 /**
  * This is the main export of the module, a Nuxt plugin named 'usesuperflow'.
@@ -18,30 +19,31 @@ export default defineNuxtPlugin({
   name: 'usesuperflow',
   async setup() {
     // Get the runtime configuration
-    const config = useRuntimeConfig();
+    const config = useRuntimeConfig()
 
     /**
      * Check if the usesuperflow config exists and has the required values.
      * If not, log an error message and return early.
      */
-    if (!config.public.usesuperflow || !config.public.usesuperflow.projectId || !config.public.usesuperflow.apiKey) {
-      console.error('Superflow configuration is missing or incomplete. Please ensure both projectId and apiKey are provided in the nuxt.config file.');
-      return;
+    if (!config.public.usesuperflow || !(config.public.usesuperflow as ModuleOptions).projectId || !(config.public.usesuperflow as ModuleOptions).apiKey) {
+      console.error('Superflow configuration is missing or incomplete. Please ensure both projectId and apiKey are provided in the nuxt.config file.')
+      return
     }
 
     // Destructure the projectId and apiKey from the usesuperflow config
-    const { projectId, apiKey } = config.public.usesuperflow;
+    const { projectId, apiKey } = config.public.usesuperflow as ModuleOptions
 
     try {
       // Attempt to initialize Superflow with the provided apiKey and projectId
       await initSuperflow(apiKey, {
-        projectId: projectId,
-      });
+        projectId,
+      })
       // Optionally, log a success message or perform additional setup
       // console.log('Superflow initialized successfully.');
-    } catch (error) {
+    }
+    catch (error) {
       // If the initialization fails, log the error
-      console.error('Failed to initialize Superflow:', error);
+      console.error('Failed to initialize Superflow:', error)
     }
   },
-});
+})

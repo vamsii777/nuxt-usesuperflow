@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   usesuperflow: {
     // Required: Your UseSuperflow Project ID
     projectId: 'your-project-id',
-    
+
     // Required: Your UseSuperflow API key
     apiKey: 'your-api-key'
   }
@@ -50,4 +50,4 @@ The module includes TypeScript definitions for all configuration options:
 interface ModuleOptions {
   projectId: string
   apiKey: string
-} 
+}

@@ -79,4 +79,4 @@ export default defineNuxtConfig({
     apiKey: 'your-api-key'
   }
 })
-``` 
+```

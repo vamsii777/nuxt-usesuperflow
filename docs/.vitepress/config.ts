@@ -98,4 +98,4 @@ export default defineConfig({
       next: 'Next page'
     }
   }
-}) 
+})

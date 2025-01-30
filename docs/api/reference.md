@@ -43,7 +43,7 @@ The module automatically adds your UseSuperflow configuration to Nuxt's public r
 
 ```ts
 nuxt.options.runtimeConfig.public.usesuperflow = {
-  projectId: string
+  projectId: string,
   apiKey: string
 }
 ```
@@ -135,4 +135,4 @@ export default defineNuxtConfig({
     apiKey: 'your-api-key',
     debug: true
   })
-}) 
+})

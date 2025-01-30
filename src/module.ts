@@ -4,8 +4,8 @@
  */
 
 // Import the necessary dependencies
-import { fileURLToPath } from 'url'
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { fileURLToPath } from 'node:url'
+import { addPlugin, createResolver, defineNuxtModule } from '@nuxt/kit'
 import { defu } from 'defu'
 
 /**
@@ -13,14 +13,14 @@ import { defu } from 'defu'
  * @interface ModuleOptions
  */
 export interface ModuleOptions {
-    /**
-     * Usesuperflow Project ID
-     * @type string */
-    projectId: string
-    /**
-     * Usesuperflow API Key
-     * @type string */
-    apiKey: string
+  /**
+   * Usesuperflow Project ID
+    @type string */
+  projectId: string
+  /**
+   * Usesuperflow API Key
+    @type string */
+  apiKey: string
 }
 
 /**

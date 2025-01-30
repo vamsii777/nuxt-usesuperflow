@@ -4,7 +4,10 @@
   "license": "MIT",
   "description": "Nuxt module for Usesuperflow (https://usesuperflow.com)",
   "homepage": "https://github.com/vamsii777/nuxt-usesuperflow",
-  "repository": "github:vamsii777/nuxt-usesuperflow",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamsii777/nuxt-usesuperflow.git"
+  },
   "engines": {
     "node": ">=20",
     "npm": ">=9",

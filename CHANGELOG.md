@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.11
+
+[compare changes](https://github.com/vamsii777/nuxt-usesuperflow/compare/v0.0.10...v0.0.11)
+
+### 🏡 Chore
+
+- Update package repository configuration ([0663626](https://github.com/vamsii777/nuxt-usesuperflow/commit/0663626))
+
+### ❤️ Contributors
+
+- Vamsii777 <vamsi@dewonderstruck.com>
+
 ## v0.0.10
 
 [compare changes](https://github.com/vamsii777/nuxt-usesuperflow/compare/v0.0.8...v0.0.10)

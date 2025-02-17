@@ -5,8 +5,8 @@
 
 // Import the necessary dependencies
 import { initSuperflow } from '@usesuperflow/client'
-import { defineNuxtPlugin, useRuntimeConfig } from '#imports'
 import type { ModuleOptions } from '../../module'
+import { defineNuxtPlugin, useRuntimeConfig } from '#imports'
 
 /**
  * This is the main export of the module, a Nuxt plugin named 'usesuperflow'.

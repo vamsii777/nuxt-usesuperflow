@@ -1,6 +1,14 @@
 # Changelog
 
 
+## v0.0.12
+
+[compare changes](https://github.com/vamsii777/nuxt-usesuperflow/compare/v0.0.11...v0.0.12)
+
+### 🏡 Chore
+
+- **deps-dev:** Bump nuxt from 3.15.4 to 3.16.0 ([6b90659](https://github.com/vamsii777/nuxt-usesuperflow/commit/6b90659))
+
 ## v0.0.11
 
 [compare changes](https://github.com/vamsii777/nuxt-usesuperflow/compare/v0.0.10...v0.0.11)

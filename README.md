@@ -2,9 +2,9 @@
 
 [![npm](https://img.shields.io/npm/v/nuxt?style=flat-square)](https://www.npmjs.com/package/nuxt)
 [![npm](https://img.shields.io/npm/v/nuxt-usesuperflow?style=flat-square)](https://www.npmjs.com/package/nuxt-usesuperflow)
-[![bun](https://img.shields.io/badge/bun-0.0.1-blue?style=flat-square)](https://www.npmjs.com/package/bun)
+[![bun](https://img.shields.io/badge/bun-1.0.0-blue?style=flat-square)](https://www.npmjs.com/package/bun)
 
-A Nuxt 3 module for integrating useSuperflow into your Nuxt application.
+A Nuxt 3+ module for integrating useSuperflow into your Nuxt application. Compatible with Nuxt 3 and Nuxt 4.
 
 ## Quick Setup
 
@@ -50,4 +50,4 @@ export default defineNuxtConfig({
 })
 ```
 
-That's it! You can now use useSuperflow in your Nuxt 3 app ✨
+That's it! You can now use useSuperflow in your Nuxt app ✨

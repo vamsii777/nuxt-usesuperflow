@@ -47,7 +47,7 @@ USESUPERFLOW_API_KEY=your-api-key
 
 ## Requirements
 
-- Nuxt.js version 3.0 or higher
+- Nuxt.js version 3.0 or higher (supports Nuxt 3 and Nuxt 4)
 - Node.js version as specified in your package.json engines field
 
 ## Basic Usage
